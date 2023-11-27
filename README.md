@@ -14,6 +14,8 @@ Cada membro da equipe de manutenção, incluindo funcionários individuais, ter�
 
 <h1>Modelagem Conceitual</h1>
 
+https://drive.google.com/file/d/17A_i0HOLAqzjhDvkU28m7RQSX_4iNIrj/view?usp=sharing
+
 <h1>Modelagem Lógica</h1>
 
 <h1>Dados</h1>
