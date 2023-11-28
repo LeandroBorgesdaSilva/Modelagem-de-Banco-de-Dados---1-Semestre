@@ -18,6 +18,10 @@ https://drive.google.com/file/d/17A_i0HOLAqzjhDvkU28m7RQSX_4iNIrj/view?usp=shari
 
 <h1>Modelagem Lógica</h1>
 
+https://drive.google.com/file/d/1hjME-4vkaoV-pGO1cwEY_tU2drBq_Sx_/view?usp=sharing
+
 <h1>Dados</h1>
 
-<h1>CRUD e Relatórios.</h1>
+<h1>CRUD </h1>
+
+</h1>Relatórios</h1>
