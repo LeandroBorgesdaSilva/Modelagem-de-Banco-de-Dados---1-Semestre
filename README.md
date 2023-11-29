@@ -94,6 +94,7 @@ VALUES
     ('thiago@gmail.com', 17),
     ('bianca@gmail.com', 18),
     ('diego@gmail.com', 19),
+    ('fernanda@gmail.com', 20),
     ('fernandaCruz@gmail.com', 20),
 
 <h2>Criação da tabela telefone do vendedor</h2>
