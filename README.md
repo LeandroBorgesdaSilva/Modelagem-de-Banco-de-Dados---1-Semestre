@@ -22,7 +22,7 @@ https://drive.google.com/file/d/1hjME-4vkaoV-pGO1cwEY_tU2drBq_Sx_/view?usp=shari
 
 <h1>Dados</h1>
 
-*Criação da tabela Vendedor*
+Criação da tabela Vendedor
 
 CREATE TABLE Vendedor (
     RG INT,
@@ -34,7 +34,7 @@ CREATE TABLE Vendedor (
     Idade INT
 );
 
-*Inserindo dados de 20 vendedores*
+Inserindo dados de 20 vendedores
 
 INSERT INTO Vendedor (RG, Genero, PrimeiroNome, NomeMeio, UltimoNome, DataNascimento, Idade)
 VALUES
