@@ -376,6 +376,51 @@ VALUES
     ('10:10:00', 'Felipe Pereira');
 
 
+<h2>Criação da tabela telefone da equipe de manutenção</h2>
+
+CREATE TABLE telefone_equipe_de_manutencao (
+    id_telefoneequipedemanutencao INT AUTO_INCREMENT PRIMARY KEY,
+    telefone VARCHAR(60),
+    id_manutencao INT,
+    FOREIGN KEY (id_manutencao) REFERENCES equipe_de_manutencao(id_manutencao)
+);
+
+<h2>Inserindo informações dos telefones das equipes de manutenção</h2>
+
+INSERT INTO telefone_equipe_de_manutencao (telefone, id_manutencao)
+VALUES
+    ('(16) 6345-2357', 1),
+    ('(12) 7845-2357', 2),
+    ('(13) 3467-1235', 3),
+    ('(12) 2365-2167', 4),
+    ('(15) 2354-2354', 5),
+    ('(11) 2365-0098', 6),
+    ('(13) 2179-2178', 7),
+    ('(13) 0876-5678', 8),
+    ('(16) 8678-1235', 9),
+    ('(17) 4645-4567', 10),
+    ('(15) 8879-3412', 11),
+    ('(11) 9007-3122', 12),
+    ('(12) 1245-1231', 13),
+    ('(11) 2345-5345', 14),
+    ('(13) 4334-5555', 15),
+    ('(16) 7566-8787', 16),
+    ('(11) 9067-5675', 17),
+    ('(16) 3432-8656', 18),
+    ('(11) 3241-5433', 19),
+    ('(66) 1235-4564', 20);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     
