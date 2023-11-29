@@ -8,7 +8,7 @@ Os carros disponíveis em nossa loja terão informações detalhadas, incluindo 
 
 No que diz respeito à manutenção dos veículos, a equipe de manutenção desempenha um papel fundamental. Cada serviço realizado terá registrado a data do serviço, o valor correspondente, o carro envolvido e a equipe responsável por essa manutenção.
 
-Essa equipe de manutenção será composta por seis pessoas, organizadas em diferentes horários de trabalho, cada funcionário estará alocada em pelo menos 2 times. Teremos um líder designado para cada equipe, cujas informações de contato, juntamente com o horário de trabalho da equipe, serão registradas para assegurar um acompanhamento eficaz das atividades de manutenção.
+Essa equipe de manutenção será composta por duas pessoas, organizadas em diferentes horários de trabalho, cada funcionário estará alocada em pelo menos 2 times. Teremos um líder designado para cada equipe, cujas informações de contato, juntamente com o horário de trabalho da equipe, serão registradas para assegurar um acompanhamento eficaz das atividades de manutenção.
 
 Cada membro da equipe de manutenção, incluindo funcionários individuais, terá suas informações como telefone, nome, nome do meio, sobrenome, e-mail, gênero, RG, data de nascimento e idade devidamente registradas, garantindo assim um trabalho coordenado e eficiente para manter os veículos em excelentes condições.
 
@@ -409,6 +409,31 @@ VALUES
     ('(16) 3432-8656', 18),
     ('(11) 3241-5433', 19),
     ('(66) 1235-4564', 20);
+
+
+<h2>Criação da tabela Funcionário de manutenção - Equipe de manutenção</h2>
+
+CREATE TABLE Funcionario_de_manutencao_Equipe_de_manutencao (
+    id_funcionariomanutencao INT,
+    id_manutencao INT,
+    FOREIGN KEY (id_funcionariomanutencao) REFERENCES funcionario_manutencao(id_funcionario),
+    FOREIGN KEY (id_manutencao) REFERENCES equipe_de_manutencao(id_manutencao)
+);
+
+<h2>Inserindo informações na tabela Funcionario_de_manutencao_Equipe_de_manutencao </h2>
+
+INSERT INTO Funcionario_de_manutencao_Equipe_de_manutencao (id_funcionariomanutencao, id_manutencao)
+VALUES
+(1,1)
+(1,2)
+(2,1)
+(2,2)
+(3,1)
+(3,2)
+(4,1)
+(4,4)
+
+
 
 
 
