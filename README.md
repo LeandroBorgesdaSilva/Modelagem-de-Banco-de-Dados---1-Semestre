@@ -25,6 +25,7 @@ https://drive.google.com/file/d/1hjME-4vkaoV-pGO1cwEY_tU2drBq_Sx_/view?usp=shari
 <h2>Criação da tabela Vendedor</h2>
 
 CREATE TABLE Vendedor (
+    IdVendedor INT AUTO_INCREMENT PRIMARY KEY,
     RG INT,
     Genero VARCHAR(9),
     PrimeiroNome VARCHAR(60),
@@ -34,7 +35,7 @@ CREATE TABLE Vendedor (
     Idade INT
 );
 
-Inserindo dados de 20 vendedores
+<h2>Inserindo dados de 20 vendedores</h2>
 
 INSERT INTO Vendedor (RG, Genero, PrimeiroNome, NomeMeio, UltimoNome, DataNascimento, Idade)
 VALUES
@@ -58,6 +59,42 @@ VALUES
     (667788990, 'Feminino', 'Bianca', 'Lima', 'Souza', '1993-05-19', 28),
     (112233445, 'Masculino', 'Diego', 'Sousa', 'Pereira', '1984-11-29', 38),
     (445566778, 'Feminino', 'Fernanda', 'Cruz', 'Mendes', '1997-04-03', 26),
+
+<h2>Criação da tabela Email do vendedor</h2>
+
+CREATE TABLE email_vendedor (
+    id_emailvendedor INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(60),
+    id_vendedor INT,
+    FOREIGN KEY (id_vendedor) REFERENCES Vendedor(IdVendedor)
+);
+
+<h2>Inserindo email dos 20 vendedores</h2>
+
+INSERT INTO email_vendedor (email, id_vendedor)
+VALUES
+    ('joao@email.com', 1),
+    ('maria@email.com', 2),
+    ('pedro@email.com', 3),
+    ('ana@email.com', 4),
+    ('lucas@email.com', 5),
+    ('julia@email.com', 6),
+    ('marcos@email.com', 7),
+    ('carla@email.com', 8),
+    ('gustavo@email.com', 9),
+    ('beatriz@email.com', 10),
+    ('felipe@email.com', 11),
+    ('larissa@email.com', 12),
+    ('rafael@email.com', 13),
+    ('amanda@email.com', 14),
+    ('henrique@email.com', 15),
+    ('camila@email.com', 16),
+    ('thiago@email.com', 17),
+    ('bianca@email.com', 18),
+    ('diego@email.com', 19),
+    ('fernanda@email.com', 20),
+    ('roberto@email.com', 21);
+
 
 <h1>CRUD </h1>
 
