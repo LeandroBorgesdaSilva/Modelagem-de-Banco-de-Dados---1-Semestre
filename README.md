@@ -22,7 +22,7 @@ https://drive.google.com/file/d/1hjME-4vkaoV-pGO1cwEY_tU2drBq_Sx_/view?usp=shari
 
 <h1>Dados</h1>
 
-Criação da tabela Vendedor
+<h2>Criação da tabela Vendedor</h2>
 
 CREATE TABLE Vendedor (
     RG INT,
