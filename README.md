@@ -278,7 +278,7 @@ CREATE TABLE carro (
 
 <h2>Inserindo informações de 20 carros</h2>
 
-INSERT INTO carro (marca, cor, ano, modelo, id_cliente, id_servicodemanutencao)
+INSERT INTO carro (marca, cor, ano, modelo, id_cliente)
 VALUES
     ('Toyota', 'Preto', '2019-01-01', 'Corolla', 1),
     ('Honda', 'Prata', '2020-05-15', 'Civic', 2),
@@ -300,6 +300,80 @@ VALUES
     ('Mitsubishi', 'Vermelho', '2017-12-05', 'Lancer', 18),
     ('Subaru', 'Azul', '2018-06-28', 'Impreza', 19),
     ('Ferrari', 'Vermelho', '2020-03-12', '488 GTB', 20);
+
+
+<h2>Criação da tabela serviço de manutenção</h2>
+
+CREATE TABLE servico_de_manutencao (
+    id_servicodemanutencao INT AUTO_INCREMENT PRIMARY KEY,
+    data_de_servico DATE,
+    valor_de_servico DOUBLE,
+    id_manutencao INT,
+    id_carro INT,
+    FOREIGN KEY (id_manutencao) REFERENCES manutencao(id_manutencao),
+    FOREIGN KEY (id_carro) REFERENCES carro(id_carro)
+);
+
+
+<h2>Inserindo informações de registros de manutenção que ocorreram</h2>
+
+INSERT INTO servico_de_manutencao (data_de_servico, valor_de_servico, id_manutencao, id_carro)
+VALUES
+
+ ('2023-01-10', 250.00, 1, 1),
+ ('2023-02-22', 180.50, 2, 2),
+ ('2023-03-15', 300.00, 3, 3),
+ ('2023-04-05', 150.75, 4, 4),
+ ('2023-05-18', 400.25, 5, 5),
+ ('2023-06-20', 275.80, 6, 6),
+ ('2023-07-03', 350.00, 7, 7),
+ ('2023-08-12', 210.30, 8, 8),
+ ('2023-09-28', 180.00, 9, 9),
+ ('2023-10-14', 420.50, 10, 10),
+ ('2023-11-30', 320.00, 11, 11),
+ ('2023-12-25', 290.75, 12, 12),
+ ('2024-01-05', 180.50, 13, 13),
+ ('2024-02-17', 390.20, 14, 14),
+ ('2024-03-08', 260.00, 15, 15),
+ ('2024-04-21', 180.90, 16, 16),
+ ('2024-05-14', 300.00, 17, 17),
+ ('2024-06-30', 350.60, 18, 18),
+ ('2024-07-18', 180.75, 19, 19),
+ ('2024-08-22', 400.25, 20, 20);
+
+<h2>Criação da tabela equipe de manutenção</h2>
+
+CREATE TABLE equipe_de_manutencao (
+    id_manutencao INT AUTO_INCREMENT PRIMARY KEY,
+    horario_de_trabalho TIME,
+    lider_da_equipe VARCHAR(60)
+);
+
+
+<h2>Inserindo informações das equipes de manutenção</h2>
+
+INSERT INTO equipe_de_manutencao (horario_de_trabalho, lider_da_equipe)
+VALUES
+    ('08:00:00', 'João Silva'),
+    ('09:30:00', 'Maria Oliveira'),
+    ('10:45:00', 'Pedro Santos'),
+    ('12:15:00', 'Ana Costa'),
+    ('14:00:00', 'Marcos Rodrigues'),
+    ('15:30:00', 'Carla Almeida'),
+    ('16:45:00', 'Rafaela Pereira'),
+    ('08:30:00', 'Fernando Gomes'),
+    ('10:00:00', 'Aline Souza'),
+    ('11:20:00', 'Gabriel Ferreira'),
+    ('13:00:00', 'Juliana Martins'),
+    ('14:45:00', 'Ricardo Vieira'),
+    ('09:15:00', 'Luiza Carvalho'),
+    ('10:45:00', 'Gustavo Oliveira'),
+    ('12:00:00', 'Patrícia Silva'),
+    ('13:30:00', 'Daniel Santos'),
+    ('15:00:00', 'Mariana Costa'),
+    ('16:20:00', 'Renato Rodrigues'),
+    ('08:45:00', 'Lúcia Almeida'),
+    ('10:10:00', 'Felipe Pereira');
 
 
 
