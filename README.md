@@ -1,6 +1,6 @@
 <h1>🎦Cenário</h1>
 
-O cliente procura um sistema de vendas de carros eficiente, onde ao chegar à nossa concessionária, será prontamente recebido por um vendedor dedicado. Para adquirir um veículo, é imprescindível que o cliente se cadastre em nosso sistema, fornecendo informações como nome, nome do meio, sobrenome, gênero, RG, e-mail, telefone, data de nascimento e idade, quando o atendimento acabar deverá ficar salvo no sistema qual vendedor realizou o atendimento para aquele cliente.
+O cliente procura um sistema de vendas de carros eficiente, onde ao chegar à nossa concessionária, será prontamente recebido por um vendedor dedicado. Para adquirir um veículo, é imprescindível que o cliente se cadastre em nosso sistema, fornecendo informações como nome, nome do meio, sobrenome, gênero, RG, e-mail, telefone, data de nascimento e idade, quando o atendimento acabar deverá ficar salvo no sistema qual vendedor realizou o atendimento para aquele cliente e caso o cliente compre um carro, esse deverá ficar salvo em seu registro.
 
 O vendedor, por sua vez, deve conter em seu cadastro dados como nome, nome do meio, sobrenome, gênero, RG, e-mail, telefone, data de nascimento e idade, garantindo um atendimento personalizado e eficaz.
 
@@ -189,52 +189,118 @@ CREATE TABLE email_cliente (
 
 INSERT INTO email_cliente (email, id_cliente)
 VALUES
-    ('carlos@email.com', 1),
-    ('carlos_silva@email.com', 1),
-    ('patricia@email.com', 2),
-    ('ricardo@email.com', 3),
-    ('ricardo_almeida@email.com', 3),
-    ('laura@email.com', 4),
-    ('fernando@email.com', 5),
-    ('aline@email.com', 6),
-    ('aline_rodrigues@email.com', 6),
-    ('gabriel@email.com', 7),
-    ('juliana@email.com', 8),
-    ('juliana_sousa@email.com', 8),
-    ('mateus@email.com', 9),
-    ('cristina@email.com', 10),
-    ('cristina_costa@email.com', 10),
-    ('diego@email.com', 11),
-    ('valentina@email.com', 12),
-    ('raul@email.com', 13),
-    ('raul_costa@email.com', 13),
-    ('elisa@email.com', 14),
-    ('vinicius@email.com', 15),
-    ('isabela@email.com', 16),
-    ('isabela_alves@email.com', 16),
-    ('lucas@email.com', 17),
-    ('caroline@email.com', 18),
-    ('enzo@email.com', 19),
-    ('mariana@email.com', 20),
-    ('mariana_mendes@email.com', 20),
+    ('carlos@gmail.com', 1),
+    ('carlos_silva@gmail.com', 1),
+    ('patricia@gmail.com', 2),
+    ('ricardo@gmail.com', 3),
+    ('ricardo_almeida@gmail.com', 3),
+    ('laura@gmail.com', 4),
+    ('fernando@gmail.com', 5),
+    ('aline@gmail.com', 6),
+    ('aline_rodrigues@gmail.com', 6),
+    ('gabriel@gmail.com', 7),
+    ('juliana@gmail.com', 8),
+    ('juliana_sousa@gmail.com', 8),
+    ('mateus@gmail.com', 9),
+    ('cristina@gmail.com', 10),
+    ('cristina_costa@gmail.com', 10),
+    ('diego@gmail.com', 11),
+    ('valentina@gmail.com', 12),
+    ('raul@gmail.com', 13),
+    ('raul_costa@gmail.com', 13),
+    ('elisa@gmail.com', 14),
+    ('vinicius@gmail.com', 15),
+    ('isabela@gmail.com', 16),
+    ('isabela_alves@gmail.com', 16),
+    ('lucas@gmail.com', 17),
+    ('caroline@gmail.com', 18),
+    ('enzo@gmail.com', 19),
+    ('mariana@gmail.com', 20),
+    ('mariana_mendes@gmail.com', 20),
+
+    
+<h2>Criação da tabela telefone do cliente</h2>
+
+CREATE TABLE telefone_cliente (
+    id_telefonecliente INT AUTO_INCREMENT PRIMARY KEY,
+    telefone VARCHAR(60),
+    id_cliente INT,
+    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente)
+);
+
+<h2>Inserindo o telefone dos clientess</h2>
+
+INSERT INTO telefone_cliente (telefone, id_cliente)
+VALUES
+    ('(11) 1234-5678', 1),
+    ('(21) 9876-5432', 1),
+    ('(31) 4567-8901', 2),
+    ('(41) 5555-1234', 3),
+    ('(51) 7777-4321', 3),
+    ('(62) 9999-8765', 4),
+    ('(71) 3333-4444', 5),
+    ('(85) 2222-1111', 6),
+    ('(92) 8888-9999', 6),
+    ('(13) 7777-8888', 7),
+    ('(81) 4444-5555', 8),
+    ('(47) 2222-3333', 9),
+    ('(17) 9999-7777', 9),
+    ('(84) 3333-2222', 10),
+    ('(27) 8888-1111', 11),
+    ('(65) 7777-9999', 12),
+    ('(98) 4444-5555', 12),
+    ('(54) 3333-6666', 13),
+    ('(31) 2222-8888', 14),
+    ('(92) 7777-1111', 14),
+    ('(11) 8888-0000', 15);
+    ('(11) 2188-4678', 15);
+    ('(11) 8348-2784', 16);
+    ('(11) 7573-3590', 17);
+    ('(11) 2029-2168', 18);
+    ('(11) 0988-7965', 19);
+    ('(11) 0769-7764', 20);
 
 
 
+<h2>Criação da tabela carro</h2>
+
+CREATE TABLE carro (
+    id_carro INT AUTO_INCREMENT PRIMARY KEY,
+    marca VARCHAR(20),
+    cor VARCHAR(20),
+    ano DATE,
+    modelo VARCHAR(30),
+    id_cliente INT,
+    id_servicodemanutencao INT,
+    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente),
+    FOREIGN KEY (id_servicodemanutencao) REFERENCES servico_de_manutencao(id_servico)
+);
 
 
+<h2>Inserindo informações de 20 carros</h2>
 
-
-
-
-
-
-
-
-
-
-
-
-
+INSERT INTO carro (marca, cor, ano, modelo, id_cliente, id_servicodemanutencao)
+VALUES
+    ('Toyota', 'Preto', '2019-01-01', 'Corolla', 1, 1),
+    ('Honda', 'Prata', '2020-05-15', 'Civic', 2, 2),
+    ('Volkswagen', 'Azul', '2018-10-20', 'Golf', 3, 3),
+    ('Ford', 'Vermelho', '2017-07-07', 'Focus', 4, 4),
+    ('Chevrolet', 'Branco', '2021-12-30', 'Onix', 5, 5),
+    ('Hyundai', 'Cinza', '2019-03-25', 'HB20', 6, 6),
+    ('Renault', 'Azul Escuro', '2016-09-12', 'Sandero', 7, 7),
+    ('Fiat', 'Verde', '2020-11-05', 'Uno', 8, 8),
+    ('BMW', 'Prata', '2018-04-18', '320i', 9, 9),
+    ('Mercedes-Benz', 'Preto', '2017-06-22', 'CLA 250', 10, 10),
+    ('Audi', 'Vermelho', '2019-08-08', 'A4', 11, 11),
+    ('Kia', 'Branco', '2020-02-14', 'Sportage', 12, 12),
+    ('Nissan', 'Cinza', '2016-11-30', 'Versa', 13, 13),
+    ('Jeep', 'Azul Marinho', '2017-10-03', 'Renegade', 14, 14),
+    ('Peugeot', 'Bordô', '2018-07-19', '208', 15, 15),
+    ('Land Rover', 'Prata', '2021-04-26', 'Evoque', 16, 16),
+    ('Volvo', 'Preto', '2019-09-10', 'XC40', 17, 17),
+    ('Mitsubishi', 'Vermelho', '2017-12-05', 'Lancer', 18, 18),
+    ('Subaru', 'Azul', '2018-06-28', 'Impreza', 19, 19),
+    ('Ferrari', 'Vermelho', '2020-03-12', '488 GTB', 20, 20);
 
 
 
