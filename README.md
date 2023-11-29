@@ -1,6 +1,6 @@
 <h1>🎦Cenário</h1>
 
-O cliente procura um sistema de vendas de carros eficiente, onde ao chegar à nossa concessionária, será prontamente recebido por um vendedor dedicado. Para adquirir um veículo, é imprescindível que o cliente se cadastre em nosso sistema, fornecendo informações como nome, nome do meio, sobrenome, gênero, RG, e-mail, telefone, data de nascimento e idade.
+O cliente procura um sistema de vendas de carros eficiente, onde ao chegar à nossa concessionária, será prontamente recebido por um vendedor dedicado. Para adquirir um veículo, é imprescindível que o cliente se cadastre em nosso sistema, fornecendo informações como nome, nome do meio, sobrenome, gênero, RG, e-mail, telefone, data de nascimento e idade, quando o atendimento acabar deverá ficar salvo no sistema qual vendedor realizou o atendimento para aquele cliente.
 
 O vendedor, por sua vez, deve conter em seu cadastro dados como nome, nome do meio, sobrenome, gênero, RG, e-mail, telefone, data de nascimento e idade, garantindo um atendimento personalizado e eficaz.
 
@@ -127,10 +127,46 @@ CREATE TABLE telefone_vendedor (
   ('(92) 7777-1111', 20),
   ('(11) 8888-0000', 21);
     
+<h2>Criação da tabela cliente</h2>
+
+CREATE TABLE cliente (
+    id_cliente INT AUTO_INCREMENT PRIMARY KEY,
+    RG INT,
+    Genero VARCHAR(9),
+    PrimeiroNome VARCHAR(60),
+    NomeMeio VARCHAR(60),
+    UltimoNome VARCHAR(60),
+    DataNascimento DATE,
+    Idade INT,
+    id_vendedor INT,
+    FOREIGN KEY (id_vendedor) REFERENCES Vendedor(IdVendedor)
+);
 
 
+<h2>Inserindo dados de 20 clientes</h2>
 
-
+INSERT INTO cliente (RG, Genero, PrimeiroNome, NomeMeio, UltimoNome, DataNascimento, Idade, id_vendedor)
+VALUES
+    (123456789, 'Masculino', 'Carlos', 'Alberto', 'Silva', '1988-03-10', 33, 1),
+    (987654321, 'Feminino', 'Patrícia', 'Fernandes', 'Oliveira', '1995-09-21', 28, 2),
+    (234567890, 'Masculino', 'Ricardo', 'Henrique', 'Almeida', '1980-12-05', 43, 3),
+    (456789012, 'Feminino', 'Laura', 'Carolina', 'Pereira', '1992-06-15', 29, 4),
+    (789012345, 'Masculino', 'Fernando', 'Santos', 'Lima', '1987-07-28', 36, 5),
+    (567890123, 'Feminino', 'Aline', 'Mendes', 'Rodrigues', '1998-01-03', 25, 6),
+    (321098765, 'Masculino', 'Gabriel', 'Antônio', 'Rocha', '1983-11-18', 38, 7),
+    (890123456, 'Feminino', 'Juliana', 'Xavier', 'Sousa', '1990-04-30', 31, 8),
+    (678901234, 'Masculino', 'Mateus', 'Oliveira', 'Lima', '1993-02-08', 28, 9),
+    (901234567, 'Feminino', 'Cristina', 'Fernandes', 'Costa', '1985-08-22', 36, 10),
+    (345678901, 'Masculino', 'Diego', 'Gomes', 'Albuquerque', '1996-07-14', 25, 11),
+    (112233445, 'Feminino', 'Valentina', 'Santana', 'Pereira', '1989-05-27', 32, 12),
+    (998877665, 'Masculino', 'Raul', 'Silveira', 'Costa', '1994-10-09', 29, 13),
+    (556677889, 'Feminino', 'Elisa', 'Martins', 'Cunha', '1999-12-01', 22, 14),
+    (334455667, 'Masculino', 'Vinicius', 'Ferreira', 'Oliveira', '1986-02-13', 35, 15),
+    (778899001, 'Feminino', 'Isabela', 'Ribeiro', 'Alves', '1997-04-17', 24, 16),
+    (990011223, 'Masculino', 'Lucas', 'Rodrigues', 'Gonçalves', '1991-06-25', 30, 17),
+    (667788990, 'Feminino', 'Caroline', 'Lima', 'Souza', '1994-11-08', 29, 18),
+    (112233445, 'Masculino', 'Enzo', 'Sousa', 'Pereira', '1984-08-03', 37, 19),
+    (445566778, 'Feminino', 'Mariana', 'Cruz', 'Mendes', '1997-10-12', 26, 20),
 
 
 
