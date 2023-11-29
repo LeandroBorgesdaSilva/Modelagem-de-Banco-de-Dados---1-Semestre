@@ -69,7 +69,7 @@ CREATE TABLE email_vendedor (
     FOREIGN KEY (id_vendedor) REFERENCES Vendedor(IdVendedor)
 );
 
-<h2>Inserindo email dos 20 vendedores</h2>
+<h2>Inserindo email dos vendedores</h2>
 
 INSERT INTO email_vendedor (email, id_vendedor)
 VALUES
@@ -103,7 +103,7 @@ CREATE TABLE telefone_vendedor (
     FOREIGN KEY (id_vendedor) REFERENCES Vendedor(IdVendedor)
 );
 
-<h2>Inserindo o telefone dos 20 vendedores</h2>
+<h2>Inserindo o telefone dos vendedores</h2>
 
   ('(11) 1234-5678', 1),
   ('(21) 9876-5432', 2),
@@ -170,6 +170,47 @@ VALUES
 
 
 
+<h2>Criação da tabela email do cliente</h2>
+
+CREATE TABLE email_cliente (
+    id_emailcliente INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(60),
+    id_cliente INT,
+    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente)
+);
+
+<h2>Inserindo email dos clientes</h2>
+
+INSERT INTO email_cliente (email, id_cliente)
+VALUES
+    ('carlos@email.com', 1),
+    ('carlos_silva@email.com', 1),
+    ('patricia@email.com', 2),
+    ('ricardo@email.com', 3),
+    ('ricardo_almeida@email.com', 3),
+    ('laura@email.com', 4),
+    ('fernando@email.com', 5),
+    ('aline@email.com', 6),
+    ('aline_rodrigues@email.com', 6),
+    ('gabriel@email.com', 7),
+    ('juliana@email.com', 8),
+    ('juliana_sousa@email.com', 8),
+    ('mateus@email.com', 9),
+    ('cristina@email.com', 10),
+    ('cristina_costa@email.com', 10),
+    ('diego@email.com', 11),
+    ('valentina@email.com', 12),
+    ('raul@email.com', 13),
+    ('raul_costa@email.com', 13),
+    ('elisa@email.com', 14),
+    ('vinicius@email.com', 15),
+    ('isabela@email.com', 16),
+    ('isabela_alves@email.com', 16),
+    ('lucas@email.com', 17),
+    ('caroline@email.com', 18),
+    ('enzo@email.com', 19),
+    ('mariana@email.com', 20),
+    ('mariana_mendes@email.com', 20),
 
 
 
