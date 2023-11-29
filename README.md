@@ -265,15 +265,14 @@ VALUES
 <h2>Criação da tabela carro</h2>
 
 CREATE TABLE carro (
+  CREATE TABLE carro (
     id_carro INT AUTO_INCREMENT PRIMARY KEY,
     marca VARCHAR(20),
     cor VARCHAR(20),
     ano DATE,
     modelo VARCHAR(30),
     id_cliente INT,
-    id_servicodemanutencao INT,
-    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente),
-    FOREIGN KEY (id_servicodemanutencao) REFERENCES servico_de_manutencao(id_servico)
+    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente)
 );
 
 
@@ -281,26 +280,26 @@ CREATE TABLE carro (
 
 INSERT INTO carro (marca, cor, ano, modelo, id_cliente, id_servicodemanutencao)
 VALUES
-    ('Toyota', 'Preto', '2019-01-01', 'Corolla', 1, 1),
-    ('Honda', 'Prata', '2020-05-15', 'Civic', 2, 2),
-    ('Volkswagen', 'Azul', '2018-10-20', 'Golf', 3, 3),
-    ('Ford', 'Vermelho', '2017-07-07', 'Focus', 4, 4),
-    ('Chevrolet', 'Branco', '2021-12-30', 'Onix', 5, 5),
-    ('Hyundai', 'Cinza', '2019-03-25', 'HB20', 6, 6),
-    ('Renault', 'Azul Escuro', '2016-09-12', 'Sandero', 7, 7),
-    ('Fiat', 'Verde', '2020-11-05', 'Uno', 8, 8),
-    ('BMW', 'Prata', '2018-04-18', '320i', 9, 9),
-    ('Mercedes-Benz', 'Preto', '2017-06-22', 'CLA 250', 10, 10),
-    ('Audi', 'Vermelho', '2019-08-08', 'A4', 11, 11),
-    ('Kia', 'Branco', '2020-02-14', 'Sportage', 12, 12),
-    ('Nissan', 'Cinza', '2016-11-30', 'Versa', 13, 13),
-    ('Jeep', 'Azul Marinho', '2017-10-03', 'Renegade', 14, 14),
-    ('Peugeot', 'Bordô', '2018-07-19', '208', 15, 15),
-    ('Land Rover', 'Prata', '2021-04-26', 'Evoque', 16, 16),
-    ('Volvo', 'Preto', '2019-09-10', 'XC40', 17, 17),
-    ('Mitsubishi', 'Vermelho', '2017-12-05', 'Lancer', 18, 18),
-    ('Subaru', 'Azul', '2018-06-28', 'Impreza', 19, 19),
-    ('Ferrari', 'Vermelho', '2020-03-12', '488 GTB', 20, 20);
+    ('Toyota', 'Preto', '2019-01-01', 'Corolla', 1),
+    ('Honda', 'Prata', '2020-05-15', 'Civic', 2),
+    ('Volkswagen', 'Azul', '2018-10-20', 'Golf', 3),
+    ('Ford', 'Vermelho', '2017-07-07', 'Focus', 4),
+    ('Chevrolet', 'Branco', '2021-12-30', 'Onix', 5),
+    ('Hyundai', 'Cinza', '2019-03-25', 'HB20', 6),
+    ('Renault', 'Azul Escuro', '2016-09-12', 'Sandero', 7),
+    ('Fiat', 'Verde', '2020-11-05', 'Uno', 8),
+    ('BMW', 'Prata', '2018-04-18', '320i', 9),
+    ('Mercedes-Benz', 'Preto', '2017-06-22', 'CLA 250', 10),
+    ('Audi', 'Vermelho', '2019-08-08', 'A4', 11),
+    ('Kia', 'Branco', '2020-02-14', 'Sportage', 12),
+    ('Nissan', 'Cinza', '2016-11-30', 'Versa', 13),
+    ('Jeep', 'Azul Marinho', '2017-10-03', 'Renegade', 14),
+    ('Peugeot', 'Bordô', '2018-07-19', '208', 15),
+    ('Land Rover', 'Prata', '2021-04-26', 'Evoque', 16),
+    ('Volvo', 'Preto', '2019-09-10', 'XC40', 17),
+    ('Mitsubishi', 'Vermelho', '2017-12-05', 'Lancer', 18),
+    ('Subaru', 'Azul', '2018-06-28', 'Impreza', 19),
+    ('Ferrari', 'Vermelho', '2020-03-12', '488 GTB', 20);
 
 
 
