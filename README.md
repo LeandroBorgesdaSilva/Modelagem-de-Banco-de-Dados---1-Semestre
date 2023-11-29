@@ -60,7 +60,7 @@ VALUES
     (112233445, 'Masculino', 'Diego', 'Sousa', 'Pereira', '1984-11-29', 38),
     (445566778, 'Feminino', 'Fernanda', 'Cruz', 'Mendes', '1997-04-03', 26),
 
-<h2>Criação da tabela Email do vendedor</h2>
+<h2>Criação da tabela email do vendedor</h2>
 
 CREATE TABLE email_vendedor (
     id_emailvendedor INT AUTO_INCREMENT PRIMARY KEY,
@@ -73,28 +73,90 @@ CREATE TABLE email_vendedor (
 
 INSERT INTO email_vendedor (email, id_vendedor)
 VALUES
-    ('joao@email.com', 1),
-    ('maria@email.com', 2),
-    ('pedro@email.com', 3),
-    ('ana@email.com', 4),
-    ('lucas@email.com', 5),
-    ('julia@email.com', 6),
-    ('marcos@email.com', 7),
-    ('carla@email.com', 8),
-    ('gustavo@email.com', 9),
-    ('beatriz@email.com', 10),
-    ('felipe@email.com', 11),
-    ('larissa@email.com', 12),
-    ('rafael@email.com', 13),
-    ('amanda@email.com', 14),
-    ('henrique@email.com', 15),
-    ('camila@email.com', 16),
-    ('thiago@email.com', 17),
-    ('bianca@email.com', 18),
-    ('diego@email.com', 19),
-    ('fernanda@email.com', 20),
-    ('roberto@email.com', 21);
+    ('joao@gmail.com', 1),
+    ('maria@gmail.com', 2),
+    ('pedro@gmail.com', 3),
+    ('ana@gmail.com', 4),
+    ('lucas@gmail.com', 5),
+    ('julia@gmail.com', 6),
+    ('marcos@gmail.com', 7),
+    ('carla@gmail.com', 8),
+    ('gustavo@gmail.com', 9),
+    ('beatriz@gmail.com', 10),
+    ('felipe@gmail.com', 11),
+    ('larissa@gmail.com', 12),
+    ('rafael@gmail.com', 13),
+    ('amanda@gmail.com', 14),
+    ('henrique@gmail.com', 15),
+    ('camila@gmail.com', 16),
+    ('thiago@gmail.com', 17),
+    ('bianca@gmail.com', 18),
+    ('diego@gmail.com', 19),
+    ('fernanda@gmail.com', 20),
 
+<h2>Criação da tabela telefone do vendedor</h2>
+
+CREATE TABLE telefone_vendedor (
+    id_telefonedovendedor INT AUTO_INCREMENT PRIMARY KEY,
+    telefone VARCHAR(60),
+    id_vendedor INT,
+    FOREIGN KEY (id_vendedor) REFERENCES Vendedor(IdVendedor)
+);
+
+<h2>Inserindo o telefone dos 20 vendedores</h2>
+
+  ('(11) 1234-5678', 1),
+  ('(21) 9876-5432', 2),
+  ('(31) 4567-8901', 3),
+  ('(41) 5555-1234', 4),
+  ('(51) 7777-4321', 5),
+  ('(62) 9999-8765', 6),
+  ('(71) 3333-4444', 7),
+  ('(85) 2222-1111', 8),
+  ('(92) 8888-9999', 9),
+  ('(13) 7777-8888', 10),
+  ('(81) 4444-5555', 11),
+  ('(47) 2222-3333', 12),
+  ('(17) 9999-7777', 13),
+  ('(84) 3333-2222', 14),
+  ('(27) 8888-1111', 15),
+  ('(65) 7777-9999', 16),
+  ('(98) 4444-5555', 17),
+  ('(54) 3333-6666', 18),
+  ('(31) 2222-8888', 19),
+  ('(92) 7777-1111', 20),
+  ('(11) 8888-0000', 21);
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 <h1>CRUD </h1>
 
