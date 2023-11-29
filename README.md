@@ -22,6 +22,43 @@ https://drive.google.com/file/d/1hjME-4vkaoV-pGO1cwEY_tU2drBq_Sx_/view?usp=shari
 
 <h1>Dados</h1>
 
+*Criação da tabela Vendedor*
+
+CREATE TABLE Vendedor (
+    RG INT,
+    Genero VARCHAR(9),
+    PrimeiroNome VARCHAR(60),
+    NomeMeio VARCHAR(60),
+    UltimoNome VARCHAR(60),
+    DataNascimento DATE,
+    Idade INT
+);
+
+*Inserindo dados de 20 vendedores*
+
+INSERT INTO Vendedor (RG, Genero, PrimeiroNome, NomeMeio, UltimoNome, DataNascimento, Idade)
+VALUES
+    (123456789, 'Masculino', 'João', 'Silva', 'Santos', '1990-05-15', 32),
+    (987654321, 'Feminino', 'Maria', 'Ferreira', 'Oliveira', '1985-10-20', 37),
+    (234567890, 'Masculino', 'Pedro', 'Henrique', 'Almeida', '1995-12-03', 27),
+    (456789012, 'Feminino', 'Ana', 'Carolina', 'Pereira', '1992-08-28', 31),
+    (789012345, 'Masculino', 'Lucas', 'Santos', 'Silveira', '1988-04-10', 34),
+    (567890123, 'Feminino', 'Julia', 'Mendes', 'Rodrigues', '1998-07-22', 25),
+    (321098765, 'Masculino', 'Marcos', 'Antônio', 'Rocha', '1980-11-05', 43),
+    (890123456, 'Feminino', 'Carla', 'Xavier', 'Sousa', '1991-03-17', 30),
+    (678901234, 'Masculino', 'Gustavo', 'Oliveira', 'Lima', '1993-09-09', 28),
+    (901234567, 'Feminino', 'Beatriz', 'Fernandes', 'Costa', '1987-06-12', 36),
+    (345678901, 'Masculino', 'Felipe', 'Gomes', 'Albuquerque', '1997-01-30', 26),
+    (112233445, 'Feminino', 'Larissa', 'Santana', 'Pereira', '1983-02-25', 39),
+    (998877665, 'Masculino', 'Rafael', 'Silveira', 'Costa', '1994-04-18', 29),
+    (556677889, 'Feminino', 'Amanda', 'Martins', 'Cunha', '1999-09-05', 24),
+    (334455667, 'Masculino', 'Henrique', 'Ferreira', 'Oliveira', '1986-12-07', 36),
+    (778899001, 'Feminino', 'Camila', 'Ribeiro', 'Alves', '1996-08-14', 27),
+    (990011223, 'Masculino', 'Thiago', 'Rodrigues', 'Gonçalves', '1990-07-01', 33),
+    (667788990, 'Feminino', 'Bianca', 'Lima', 'Souza', '1993-05-19', 28),
+    (112233445, 'Masculino', 'Diego', 'Sousa', 'Pereira', '1984-11-29', 38),
+    (445566778, 'Feminino', 'Fernanda', 'Cruz', 'Mendes', '1997-04-03', 26),
+
 <h1>CRUD </h1>
 
 <h1>Relatórios</h1>
