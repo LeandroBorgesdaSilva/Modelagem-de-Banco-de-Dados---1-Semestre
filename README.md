@@ -74,6 +74,7 @@ CREATE TABLE email_vendedor (
 INSERT INTO email_vendedor (email, id_vendedor)
 VALUES
     ('joao@gmail.com', 1),
+    ('joaosilva@gmail.com', 1),
     ('maria@gmail.com', 2),
     ('pedro@gmail.com', 3),
     ('ana@gmail.com', 4),
@@ -86,13 +87,14 @@ VALUES
     ('felipe@gmail.com', 11),
     ('larissa@gmail.com', 12),
     ('rafael@gmail.com', 13),
+    ('rafaelsilveira@gmail.com', 13),
     ('amanda@gmail.com', 14),
     ('henrique@gmail.com', 15),
     ('camila@gmail.com', 16),
     ('thiago@gmail.com', 17),
     ('bianca@gmail.com', 18),
     ('diego@gmail.com', 19),
-    ('fernanda@gmail.com', 20),
+    ('fernandaCruz@gmail.com', 20),
 
 <h2>Criação da tabela telefone do vendedor</h2>
 
