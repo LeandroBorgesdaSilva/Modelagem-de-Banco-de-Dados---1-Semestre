@@ -505,6 +505,47 @@ VALUES
     (267890, 'Feminino', 'Isabela', 'Ribeiro', 'Mendes', '1991-05-01', 30);
 
 
+<h2>Criação da tabela Telefone do funcionário de manutenção</h2>
+
+CREATE TABLE Telefone_funcionario_manutencao (
+    ID_Telefonefuncionariomanutencao INT AUTO_INCREMENT PRIMARY KEY,
+    Telefone VARCHAR(60),
+    ID_Funcionariomanutencao INT,
+    FOREIGN KEY (ID_Funcionariomanutencao) REFERENCES Funcionario_de_manutencao(id_funcionariomanutencao)
+);
+
+<h2>Inserindo informações na tabela Telefone do funcionário de manutenção</h2>
+
+  ('(11) 7534-1237', 1),
+  ('(24) 3456-1674', 2),
+  ('(16) 5667-2345', 3),
+  ('(13) 3456-6789', 4),
+  ('(13) 2367-5679', 5),
+  ('(12) 6789-0098', 6),
+  ('(16) 5675-6783', 7),
+  ('(11) 7545-6455', 8),
+  ('(12) 6474-6465', 9),
+  ('(13) 6745-6789', 10),
+  ('(24) 4567-1234', 11),
+  ('(12) 4567-3456', 12),
+  ('(16) 4567-1235', 13),
+  ('(24) 4745-2346', 14),
+  ('(11) 4574-1234', 15),
+  ('(13) 3453-1234', 16),
+  ('(16) 3456-12356', 17),
+  ('(12) 3456-4567', 18),
+  ('(24) 2134-6789', 19),
+  ('(11) 1200-4567', 20),
+
+
+
+
+
+
+
+
+
+
 
 
 
