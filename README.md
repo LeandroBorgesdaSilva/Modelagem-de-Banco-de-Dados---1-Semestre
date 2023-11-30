@@ -590,10 +590,22 @@ INSERT INTO Email_funcionario_manutencao VALUES
 
 
 <h2>Prints da leitura desses dados</h2>
+
 ![image](https://github.com/LeandroBorgesdaSilva/Modelagem-de-Banco-de-Dados---1-Semestre/assets/104734317/cb37b61c-e7b2-4449-8572-c33f94541b12)
 ![image](https://github.com/LeandroBorgesdaSilva/Modelagem-de-Banco-de-Dados---1-Semestre/assets/104734317/106e61c8-3a74-410d-894e-4ab179cfa9cc)
 
+<h2>Prints da Deleção de alguns desses dados</h2>
 
+![image](https://github.com/LeandroBorgesdaSilva/Modelagem-de-Banco-de-Dados---1-Semestre/assets/104734317/db07bd5f-6d3c-41c7-8ad8-7dc4d7f6bce0)
+![image](https://github.com/LeandroBorgesdaSilva/Modelagem-de-Banco-de-Dados---1-Semestre/assets/104734317/14f4e25c-cecf-4ce5-ae1c-9437dd3e8c8b)
+
+<h2>Prints das alterações de alguns desses dados</h2>
+
+![image](https://github.com/LeandroBorgesdaSilva/Modelagem-de-Banco-de-Dados---1-Semestre/assets/104734317/77023d31-d8fb-4d43-93aa-139a20aeb6a8)
+![image](https://github.com/LeandroBorgesdaSilva/Modelagem-de-Banco-de-Dados---1-Semestre/assets/104734317/e72d20fd-94ce-4262-bb4f-97e8e4c8bb67)
+![image](https://github.com/LeandroBorgesdaSilva/Modelagem-de-Banco-de-Dados---1-Semestre/assets/104734317/07f12ffa-de80-4585-8896-45d3e928fbe5)
+![image](https://github.com/LeandroBorgesdaSilva/Modelagem-de-Banco-de-Dados---1-Semestre/assets/104734317/b6ba9547-bdf1-4d4f-a1e4-4a3a83d6b1b6)
+![image](https://github.com/LeandroBorgesdaSilva/Modelagem-de-Banco-de-Dados---1-Semestre/assets/104734317/7936f833-eae3-4650-be11-d7bc0779079a)
 
 
 <h1>Relatórios</h1>
