@@ -590,4 +590,7 @@ INSERT INTO Telefone_funcionario_manutencao (Email,  ID_Funcionariomanutencao)
 
 <h1>CRUD </h1>
 
+![image](https://github.com/LeandroBorgesdaSilva/Modelagem-de-Banco-de-Dados---1-Semestre/assets/104734317/17db5201-b2eb-4ad5-b4c1-9b14cf458a3d)
+
+
 <h1>Relatórios</h1>
