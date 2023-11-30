@@ -62,7 +62,7 @@ VALUES
 
 <h2>Criação da tabela email do vendedor</h2>
 
-<h3>
+
 CREATE TABLE email_vendedor (
     id_emailvendedor INT AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(60),
@@ -97,7 +97,7 @@ VALUES
     ('diego@gmail.com', 19),
     ('fernanda@gmail.com', 20),
     ('fernandaCruz@gmail.com', 20),
-</h3>
+
 <h2>Criação da tabela telefone do vendedor</h2>
 
 CREATE TABLE telefone_vendedor (
