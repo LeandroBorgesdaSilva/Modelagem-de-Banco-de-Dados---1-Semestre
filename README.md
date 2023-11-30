@@ -516,6 +516,8 @@ CREATE TABLE Telefone_funcionario_manutencao (
 
 <h2>Inserindo informações na tabela Telefone do funcionário de manutenção</h2>
 
+INSERT INTO Telefone_funcionario_manutencao (Telefone,  ID_Funcionariomanutencao)
+
   ('(11) 7534-1237', 1),
   ('(24) 3456-1674', 2),
   ('(16) 5667-2345', 3),
@@ -537,14 +539,45 @@ CREATE TABLE Telefone_funcionario_manutencao (
   ('(24) 2134-6789', 19),
   ('(11) 1200-4567', 20),
 
+<h2>Criação da tabela email do funcionário da manutenção</h2>
 
+CREATE TABLE Email_funcionario_manutencao (
+    ID_Emailfuncionariomanutencao INT AUTO_INCREMENT PRIMARY KEY,
+    Email VARCHAR(60),
+    ID_Funcionariomanutencao INT,
+    FOREIGN KEY (ID_Funcionariomanutencao) REFERENCES Funcionario_de_manutencao(id_funcionariomanutencao)
+);
 
+<h2>Inserindo informações na tabela email do funcionário da manutenção</h2>
 
+INSERT INTO Telefone_funcionario_manutencao (Email,  ID_Funcionariomanutencao)
 
-
-
-
-
+ ('joaosilvajunior@gmail.com', 1),
+ ('mariaoliveirapereira@gmail.com',2)
+ ('pedrosantossilveira@gmail.com',3)
+ ('pedrosantos@gmail.com',3)
+ ('anacostamartins@gmail.com',4)
+ ('marcosrodriguesalmeida@gmail.com',5)
+ ('carlaalmeidapereira@gmail.com',6)
+ ('carlaalmeida@gmail.com',6)
+ ('rafaelpereiragomes@gmail.com',7)
+ ('fernandagomessouza@gmail.com',8)
+ ('lucassilvaferreira@gmail.com',9)
+ ('alinesouzarocha@gmail.com',10)
+ ('alinesouza@gmail.com',10)
+ ('gabrielferreiramachado@gmail.com',11)
+ ('gabrielferreira@gmail.com',11)
+ ('julianamartinssantos@gmail.com',12)
+ ('mateusalmeidaoliveira@gmail.com',13)
+ ('rafaelaoliveirarodrigues@gmail.com',14)
+ ('diegorodriguescosta@gmail.com',15)
+ ('luanacostasantos@gmail.com',16)
+ ('miguelsantosgoncalves@gmail.com',17)
+ ('larissagoncalvesalves@gmail.com',18)
+ ('larissagancalves@gmail.com',18)
+ ('brunoalvesribeiro@gmail.com',19)
+ ('isabelaribeiromendes@gmail.com',20)
+ ('isabelaribeiro@gmail.com',20)
 
 
 
