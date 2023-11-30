@@ -428,10 +428,81 @@ VALUES
 (1,2)
 (2,1)
 (2,2)
-(3,1)
-(3,2)
-(4,1)
+(3,3)
+(3,4)
+(4,3)
 (4,4)
+(5,5)
+(5,6)
+(6,5)
+(6,6)
+(7,7)
+(7,8)
+(8,8)
+(8,9)
+(9,8)
+(9,9)
+(10,10)
+(10,11)
+(11,10)
+(11,11)
+(12,12)
+(12,13)
+(13,12)    
+(13,13)
+(14,14)
+(14,15)
+(15,14)
+(15,15)
+(16,16)
+(16,17)
+(17,16)
+(17,17)
+(18,18)
+(18,19)
+(19,19)
+(19,20)
+(20,29)
+(20,20)
+
+
+<h2>Criação da tabela Funcionário de manutenção</h2>
+
+CREATE TABLE Funcionario_de_manutencao (
+    id_funcionariomanutencao INT AUTO_INCREMENT PRIMARY KEY,
+    RG INT,
+    Genero VARCHAR(9),
+    primeiro_nome VARCHAR(60),
+    nome_do_meio VARCHAR(60),
+    nome_final VARCHAR(60),
+    data_de_nascimento DATE,
+    idade INT
+);
+
+<h2>Inserindo informações na tabela Funcionario_de_manutencao</h2>
+
+INSERT INTO Funcionario_de_manutencao (RG, Genero, primeiro_nome, nome_do_meio, nome_final, data_de_nascimento, idade)
+VALUES
+    (123456, 'Masculino', 'João', 'Silva', 'Junior', '1980-05-15', 42),
+    (234567, 'Feminino', 'Maria', 'Oliveira', 'Pereira', '1985-08-20', 37),
+    (345678, 'Masculino', 'Pedro', 'Santos', 'Silveira', '1990-11-10', 32),
+    (456789, 'Feminino', 'Ana', 'Costa', 'Martins', '1988-03-25', 34),
+    (567890, 'Masculino', 'Marcos', 'Rodrigues', 'Almeida', '1992-07-07', 29),
+    (678901, 'Feminino', 'Carla', 'Almeida', 'Pereira', '1987-09-12', 35),
+    (789012, 'Masculino', 'Rafael', 'Pereira', 'Gomes', '1995-01-30', 27),
+    (890123, 'Feminino', 'Fernanda', 'Gomes', 'Souza', '1993-04-18', 29),
+    (901234, 'Masculino', 'Lucas', 'Silva', 'Ferreira', '1991-12-05', 30),
+    (123401, 'Feminino', 'Aline', 'Souza', 'Rocha', '1989-06-22', 33),
+    (234012, 'Masculino', 'Gabriel', 'Ferreira', 'Machado', '1986-10-09', 36),
+    (340123, 'Feminino', 'Juliana', 'Martins', 'Santos', '1994-02-14', 28),
+    (401234, 'Masculino', 'Mateus', 'Almeida', 'Oliveira', '1984-11-30', 37),
+    (512345, 'Feminino', 'Rafaela', 'Oliveira', 'Rodrigues', '1990-09-08', 31),
+    (612340, 'Masculino', 'Diego', 'Rodrigues', 'Costa', '1997-07-03', 24),
+    (723401, 'Feminino', 'Luana', 'Costa', 'Santos', '1987-04-20', 34),
+    (834012, 'Masculino', 'Miguel', 'Santos', 'Gonçalves', '1993-03-17', 28),
+    (945678, 'Feminino', 'Larissa', 'Gonçalves', 'Alves', '1995-12-12', 26),
+    (156789, 'Masculino', 'Bruno', 'Alves', 'Ribeiro', '1988-08-28', 33),
+    (267890, 'Feminino', 'Isabela', 'Ribeiro', 'Mendes', '1991-05-01', 30);
 
 
 
@@ -441,14 +512,6 @@ VALUES
 
 
 
-
-
-
-
-
-
-
-    
 
 <h1>CRUD </h1>
 
